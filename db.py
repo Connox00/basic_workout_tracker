@@ -4,8 +4,8 @@ def connect_to_db():
     # Verbindung ohne Datenbank, um zu prüfen ob sie existiert
     base_connection = mysql.connector.connect(
         host="127.0.0.1",
-        user="lutz",
-        password="11"
+        user="",
+        password=""
     )
     cursor = base_connection.cursor()
     cursor.execute("SHOW DATABASES")
